@@ -24,7 +24,7 @@ save.addEventListener("click",(e)=>{
     e.preventDefault();
     console.log(updateposs);
     if(updateposs==false){
-        fetch("/notes",{
+        fetch("http://localhost:3000/notes",{
             method: "POST",
             headers:{
                 "content-type": "application/json"
@@ -58,7 +58,7 @@ closenotes.addEventListener("click",function(e){
     allnotes.classList.remove('show');
 })
 function getdata(){
-    fetch("/notes")
+    fetch("http://localhost:3000/notes")
     .then((res)=>res.json())
     .then((data)=> append(data))
     .catch((e)=>console.log(e));
@@ -99,12 +99,12 @@ function append(data){
     })
 }
 function deletedata(id){
-    fetch(`/notes/${id}`,{
+    fetch(`http://localhost:3000/notes/${id}`,{
          method:"DELETE"
     })
 }
 function updatedata(id){
-    fetch(`/notes/${id}`,{
+    fetch(`http://localhost:3000/notes/${id}`,{
          method:"PATCH",
          headers:{
             "content-type": "application/json"
