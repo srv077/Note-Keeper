@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3aa61d10e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="popup" class="hide">
+        <div id="popup-container">
+            <header>
+                <div></div>
+                <h3 id="headnotes">Add Notes</h3>
+                <div id="close">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+            </header>
+            <hr>
+            <div id="popup-page">
+            <br>
+            <div>
+                <label for="title">Title:</label>
+                <input type="text" id="title">
+            </div>
+            <br>
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date">
+            </div>
+            <br>
+            <div>
+                <label for="note">Note:</label>
+                <br>
+                <textarea id="note" name="note" ></textarea>
+            </div>
+            </div>
+            <div style="margin: 10px;">
+            <button id="save" type="button">Save</button>
+            <button id="reset" type="button">Reset</button>
+            </div>
+        </div>
+    </div>
+    <div id="front" >
+        <div id="heading"> 
+            <h1>Note Keeper</h1>
+        </div>
+        <div id="firsthalf">
+            <div id="addnotes">
+                <i id="plus" class="fa-solid fa-plus fa-3x"></i>
+                <h1>Add</h1>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <div id="shownotes">
+                <h1 style="cursor:pointer ;">Show Notes</h1>
+            </div> 
+        </div>
+    </div>
+    <div id="allnotes" class="hide">
+        <div id="notesheading">
+            <div class="noteshead"><h1>Notes</h1></div>
+            <div class="noteshead"><i  id="closeimg"  class="fa-solid fa-circle-xmark fa-lg"></i></div>
+        </div>
+        <hr style="color:white;">
+        <div id="notesadded" >
+
+        </div>
+    </div>
+</body>
+<script src="index.js" ></script>
+</html>

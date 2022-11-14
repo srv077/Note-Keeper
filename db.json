@@ -1,0 +1,22 @@
+{
+  "notes": [
+    {
+      "title": "1st note",
+      "date": "",
+      "notes": "this is my first note .so to check notekeeper.i edited and updated to check it whether it work or not\n",
+      "id": 1
+    },
+    {
+      "title": "second note",
+      "date": "2022-11-02",
+      "notes": "this is my second note",
+      "id": 2
+    },
+    {
+      "title": "third ",
+      "date": "2022-11-03",
+      "notes": "this is my third note\n",
+      "id": 3
+    }
+  ]
+}
